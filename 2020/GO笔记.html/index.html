@@ -114,12 +114,12 @@
 
 
 
-<meta name="description" content="前言 记录Go学习过程中关于package 调用-再封装的知识点。 package注意事项  一个文件目录下的go文件隶属同一个pakcage 如果不用go mod，绝对路径：那项目应该创在 $GOPATH 或者 $GOPATH 的src下 可以使用相对路径 对于结构体，大写属性才对外可见。如name对外包不可见，Name可见。  init() 函数  在导入main前被执行">
+<meta name="description" content="前言记录Go学习过程中关于package 调用-再封装的知识点。 package注意事项 一个文件目录下的go文件隶属同一个pakcage 如果不用go mod，绝对路径：那项目应该创在 $GOPATH 或者 $GOPATH 的src下 可以使用相对路径 对于结构体，大写属性才对外可见。如name对外包不可见，Name可见。  init() 函数 在导入main前被执行 无返回无参数  12fun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GO笔记">
 <meta property="og:url" content="http://jaxchan.top/2020/GO%E7%AC%94%E8%AE%B0.html/index.html">
 <meta property="og:site_name" content="Borderland">
-<meta property="og:description" content="前言 记录Go学习过程中关于package 调用-再封装的知识点。 package注意事项  一个文件目录下的go文件隶属同一个pakcage 如果不用go mod，绝对路径：那项目应该创在 $GOPATH 或者 $GOPATH 的src下 可以使用相对路径 对于结构体，大写属性才对外可见。如name对外包不可见，Name可见。  init() 函数  在导入main前被执行">
+<meta property="og:description" content="前言记录Go学习过程中关于package 调用-再封装的知识点。 package注意事项 一个文件目录下的go文件隶属同一个pakcage 如果不用go mod，绝对路径：那项目应该创在 $GOPATH 或者 $GOPATH 的src下 可以使用相对路径 对于结构体，大写属性才对外可见。如name对外包不可见，Name可见。  init() 函数 在导入main前被执行 无返回无参数  12fun">
 <meta property="article:published_time" content="2020-02-21T06:56:34.000Z">
 <meta property="article:modified_time" content="2020-02-28T10:56:30.904Z">
 <meta property="article:author" content="JaxChan">
@@ -412,33 +412,32 @@
       
 
       
-        <h1 id="前言">前言</h1>
-<p>记录Go学习过程中关于package 调用-再封装的知识点。</p>
-<h1 id="package注意事项">package注意事项</h1>
-<ul>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录Go学习过程中关于package 调用-再封装的知识点。</p>
+<h1 id="package注意事项"><a href="#package注意事项" class="headerlink" title="package注意事项"></a>package注意事项</h1><ul>
 <li>一个文件目录下的go文件隶属同一个pakcage</li>
 <li>如果不用<strong>go mod</strong>，绝对路径：那项目应该创在 <strong>$GOPATH</strong> 或者 <strong>$GOPATH</strong> 的src下</li>
 <li>可以使用相对路径</li>
 <li>对于结构体，大写属性才对外可见。<em>如name对外包不可见，Name可见。</em></li>
 </ul>
-<h1 id="init-函数">init() 函数</h1>
-<ul>
+<h1 id="init-函数"><a href="#init-函数" class="headerlink" title="init() 函数"></a>init() 函数</h1><ul>
 <li>在导入main前被执行</li>
 <li>无返回无参数</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>一个go文件下可以有多个init()函数，先写先被调用。</p></li>
-<li><p>同个package下的不同go文件，是对<strong>go文件名</strong>排序执行。</p></li>
+<li>一个go文件下可以有多个init()函数，先写先被调用。</li>
+<li><p>同个package下的不同go文件，是对<strong>go文件名</strong>排序执行。</p>
+</li>
 <li><p>对不同的package，</p>
 <ul>
 <li>若package间无依赖，按照import顺序执行</li>
 <li>否则，先从最深处执行。</li>
-</ul></li>
-<li><p>import _ "package"： 下划线表示导入只执行init</p></li>
 </ul>
-<h1 id="package---time">package - time</h1>
-<ul>
+</li>
+<li><p>import _ “package”： 下划线表示导入只执行init</p>
+</li>
+</ul>
+<h1 id="package-time"><a href="#package-time" class="headerlink" title="package - time"></a>package - time</h1><ul>
 <li>导入</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"time"</span></span><br></pre></td></tr></table></figure>
@@ -447,7 +446,7 @@
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t1 := time.Now()</span><br></pre></td></tr></table></figure>
 <ul>
-<li>时间格式化（time对象转string） ： Jan 2 15:04:05 2006</li>
+<li>时间格式化（time对象转string） ：  Jan 2  15:04:05 2006 </li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s1 := t1.Format(<span class="string">"2006年1月2日 15:04:05"</span>)</span><br><span class="line"><span class="comment">//如果已经设置好了Format</span></span><br><span class="line">s1:= t1.String()</span><br></pre></td></tr></table></figure>
 <ul>
@@ -470,8 +469,7 @@
 <li>程序睡眠</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time.Sleep( <span class="number">3</span> * time.Second )</span><br></pre></td></tr></table></figure>
-<h1 id="package---rand">package - rand</h1>
-<ul>
+<h1 id="package-rand"><a href="#package-rand" class="headerlink" title="package - rand"></a>package - rand</h1><ul>
 <li>设置种子</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rand.Seed(time.Now().Unix())</span><br></pre></td></tr></table></figure>
@@ -479,16 +477,18 @@
 <li>随机整数</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rand.Intn(<span class="number">10</span>) <span class="comment">//[0,9] 返回int 注意time.Sleep(int64)</span></span><br></pre></td></tr></table></figure>
-<h1 id="package---os-关于文件">package - os 关于文件</h1>
-<ul>
+<h1 id="package-os-关于文件"><a href="#package-os-关于文件" class="headerlink" title="package - os 关于文件"></a>package - os 关于文件</h1><ul>
 <li><p>获取文件基本信息</p>
 <ul>
-<li>使用 os.Stat(文件名) 获取</li>
-<li>文件大小是byte格式的 <em>uint8</em> ， 一个字母就是一个byte</li>
-</ul></li>
+<li>使用 os.Stat(文件名) 获取 </li>
+<li>文件大小是byte格式的 <em>uint8</em>  ， 一个字母就是一个byte</li>
+</ul>
+</li>
 <li><p>创建文件的时候，需要给出权限</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">r 004 &#x2F;&#x2F;读</span><br><span class="line">w 002 &#x2F;&#x2F;写</span><br><span class="line">x 001 &#x2F;&#x2F;执行</span><br><span class="line">- 000 &#x2F;&#x2F;无</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tyepe - owner - group - others</span><br><span class="line">0777 所有权限 &#x2F;&#x2F;os.ModePerm</span><br></pre></td></tr></table></figure></li>
-<li><p>相对路径与绝对路径</p></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">r 004 &#x2F;&#x2F;读</span><br><span class="line">w 002 &#x2F;&#x2F;写</span><br><span class="line">x 001 &#x2F;&#x2F;执行</span><br><span class="line">- 000 &#x2F;&#x2F;无</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tyepe - owner - group - others</span><br><span class="line">0777 所有权限 &#x2F;&#x2F;os.ModePerm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>相对路径与绝对路径</p>
+</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断是否为绝对路径</span></span><br><span class="line">fileName := <span class="string">"./a.txt"</span></span><br><span class="line">filepath.IsAbs(fileName)</span><br><span class="line"></span><br><span class="line"><span class="comment">//相对路径转为绝对路几个</span></span><br><span class="line">absPath,err := filePath.Abs(fileName)</span><br></pre></td></tr></table></figure>
 <ul>
@@ -511,14 +511,13 @@
 <li>删除文件或者文件夹</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//删除文件或者空文件夹</span></span><br><span class="line">err:=os.Remove(路径) </span><br><span class="line"></span><br><span class="line"><span class="comment">//递归删除</span></span><br><span class="line">err:=os.RemoveAll(路径)</span><br></pre></td></tr></table></figure>
-<h1 id="package---io">package - io</h1>
-<ul>
-<li>读取数据
-<ul>
+<h1 id="package-io"><a href="#package-io" class="headerlink" title="package - io"></a>package - io</h1><ul>
+<li>读取数据<ul>
 <li>使用Read()方法是会记录当前指针的，所以多次调用就会往后读取数据。</li>
 <li>读完了err为EOF</li>
 <li>指定位置需要使用 WriteAt</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//打开文件</span></span><br><span class="line">fileName := 文件路径</span><br><span class="line">file,err:=os.Open(fileName)</span><br><span class="line"><span class="keyword">if</span> err!=<span class="literal">nil</span>&#123;</span><br><span class="line">    fmt.Println(err)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">defer</span> file.Close()</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建存储切片 </span></span><br><span class="line">bs := <span class="built_in">make</span>([]<span class="keyword">byte</span>,<span class="number">4</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//读取数据 </span></span><br><span class="line">n,err:=file.Read(bs)</span><br><span class="line"><span class="comment">//bs里面存的是ASCII编码数值 需要转为string</span></span><br><span class="line">s1 := <span class="keyword">string</span>(bs)</span><br></pre></td></tr></table></figure>
 <p>使用ioutil也很方便，会一次性读完</p>
@@ -535,8 +534,7 @@
 <li>文件copy</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//File都是io.File对象</span></span><br><span class="line">io.Copy(srcFile,dstFile)</span><br></pre></td></tr></table></figure>
-<h1 id="package---bufferio">package - bufferio</h1>
-<ul>
+<h1 id="package-bufferio"><a href="#package-bufferio" class="headerlink" title="package - bufferio"></a>package - bufferio</h1><ul>
 <li>创建缓冲，减少访问磁盘的次数。</li>
 <li>读入。只有 <strong>读取的文件的大小</strong> 远大于 <strong>缓冲区的大小</strong> 的时候才有效。</li>
 </ul>
@@ -545,8 +543,7 @@
 <li>写出。</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">file,err:=os.OpenFile(...)</span><br><span class="line"><span class="keyword">defer</span> ...</span><br><span class="line">w1:=bufio.NewWriter(file)</span><br><span class="line">n,err:=w1.WriteString(<span class="string">"测试"</span>)</span><br><span class="line"><span class="comment">//必须刷新缓冲区，才会写入文件</span></span><br><span class="line">w1.Flush()</span><br></pre></td></tr></table></figure>
-<h1 id="package---ioutil">package - ioutil</h1>
-<ul>
+<h1 id="package-ioutil"><a href="#package-ioutil" class="headerlink" title="package - ioutil"></a>package - ioutil</h1><ul>
 <li>一次性读完数据</li>
 </ul>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//读出是byte[]类型</span></span><br><span class="line">data,err:=ioutil.ReadFile(filePath)</span><br></pre></td></tr></table></figure>
@@ -681,7 +678,7 @@
               
                 <a href="/archives%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -692,7 +689,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -703,7 +700,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -759,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package注意事项"><span class="nav-number">2.</span> <span class="nav-text">package注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#init-函数"><span class="nav-number">3.</span> <span class="nav-text">init() 函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---time"><span class="nav-number">4.</span> <span class="nav-text">package - time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---rand"><span class="nav-number">5.</span> <span class="nav-text">package - rand</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---os-关于文件"><span class="nav-number">6.</span> <span class="nav-text">package - os 关于文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---io"><span class="nav-number">7.</span> <span class="nav-text">package - io</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---bufferio"><span class="nav-number">8.</span> <span class="nav-text">package - bufferio</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package---ioutil"><span class="nav-number">9.</span> <span class="nav-text">package - ioutil</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package注意事项"><span class="nav-number">2.</span> <span class="nav-text">package注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#init-函数"><span class="nav-number">3.</span> <span class="nav-text">init() 函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-time"><span class="nav-number">4.</span> <span class="nav-text">package - time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-rand"><span class="nav-number">5.</span> <span class="nav-text">package - rand</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-os-关于文件"><span class="nav-number">6.</span> <span class="nav-text">package - os 关于文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-io"><span class="nav-number">7.</span> <span class="nav-text">package - io</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-bufferio"><span class="nav-number">8.</span> <span class="nav-text">package - bufferio</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-ioutil"><span class="nav-number">9.</span> <span class="nav-text">package - ioutil</span></a></li></ol></div>
             
 
           </div>

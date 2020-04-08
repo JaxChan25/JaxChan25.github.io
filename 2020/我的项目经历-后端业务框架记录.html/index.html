@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<meta name="referrer" content="no-referrer" />
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="https://fonts.loli.net/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="GO," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Borderland" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="前言其实当初做完自己的博客之后就想着写一篇关于自己项目经历的文章。 毕竟这是一个经历，是我大学美好青春、热血挥洒的地方。哪怕它没那么好、没那么美妙。 明天下午是字节的面试。也就尽我所能把我项目里的事情讲清楚，写的东西虽然不一定有用。也当时一个记录吧。 Borderland 个人博客项目名称项目名字叫做Borderland，叫做无主之地。当时玩无助之地2，就记住了这个名字。也就用了这个名字。 点我查">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的项目经历:后端业务框架记录">
+<meta property="og:url" content="http://jaxchan.top/2020/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%8F%E5%8E%86-%E5%90%8E%E7%AB%AF%E4%B8%9A%E5%8A%A1%E6%A1%86%E6%9E%B6%E8%AE%B0%E5%BD%95.html/index.html">
+<meta property="og:site_name" content="Borderland">
+<meta property="og:description" content="前言其实当初做完自己的博客之后就想着写一篇关于自己项目经历的文章。 毕竟这是一个经历，是我大学美好青春、热血挥洒的地方。哪怕它没那么好、没那么美妙。 明天下午是字节的面试。也就尽我所能把我项目里的事情讲清楚，写的东西虽然不一定有用。也当时一个记录吧。 Borderland 个人博客项目名称项目名字叫做Borderland，叫做无主之地。当时玩无助之地2，就记住了这个名字。也就用了这个名字。 点我查">
+<meta property="article:published_time" content="2020-04-08T02:57:34.000Z">
+<meta property="article:modified_time" content="2020-04-08T02:58:49.947Z">
+<meta property="article:author" content="JaxChan">
+<meta property="article:tag" content="GO">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://jaxchan.top/2020/我的项目经历-后端业务框架记录.html/"/>
+
+
+
+
+
+  <title>我的项目经历:后端业务框架记录 | Borderland</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Borderland</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">小亮的个人博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jaxchan.top/2020/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%8F%E5%8E%86-%E5%90%8E%E7%AB%AF%E4%B8%9A%E5%8A%A1%E6%A1%86%E6%9E%B6%E8%AE%B0%E5%BD%95.html/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JaxChan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Borderland">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">我的项目经历:后端业务框架记录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-08T10:57:34+08:00">
+                2020-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BC%96%E7%A8%8B/%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>其实当初做完自己的博客之后就想着写一篇关于自己项目经历的文章。</p>
+<p>毕竟这是一个经历，是我大学美好青春、热血挥洒的地方。哪怕它没那么好、没那么美妙。</p>
+<p>明天下午是字节的面试。也就尽我所能把我项目里的事情讲清楚，写的东西虽然不一定有用。也当时一个记录吧。</p>
+<h1 id="Borderland-个人博客"><a href="#Borderland-个人博客" class="headerlink" title="Borderland 个人博客"></a>Borderland 个人博客</h1><h2 id="项目名称"><a href="#项目名称" class="headerlink" title="项目名称"></a>项目名称</h2><p>项目名字叫做Borderland，叫做无主之地。当时玩无助之地2，就记住了这个名字。也就用了这个名字。</p>
+<p><a href="https://github.com/JaxChan25/borderland" target="_blank" rel="noopener">点我查看项目代码</a></p>
+<p>下面我的语言想必没有多专业。但尽量说清楚。</p>
+<h2 id="后端是如何运行起来的？"><a href="#后端是如何运行起来的？" class="headerlink" title="后端是如何运行起来的？"></a>后端是如何运行起来的？</h2><h3 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Init 初始化配置项</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Init</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="comment">// 从本地读取环境变量</span></span><br><span class="line">	godotenv.Load()</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置日志级别</span></span><br><span class="line">	util.BuildLogger(os.Getenv(<span class="string">"LOG_LEVEL"</span>))</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 读取翻译文件</span></span><br><span class="line">	<span class="keyword">if</span> err := LoadLocales(<span class="string">"conf/locales/zh-cn.yaml"</span>); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		util.Log().Panic(<span class="string">"翻译文件加载失败"</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 连接数据库</span></span><br><span class="line">	model.Database(os.Getenv(<span class="string">"MYSQL_DSN"</span>))</span><br><span class="line">	cache.Redis()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>godotenv是为了后面使用 os.Getenv(“SOME_ENV_VAR”) 读取环境变量。读取的文件为.env</p>
+</li>
+<li><p>连接Mysql数据库. 单例模式</p>
+<ul>
+<li>使用的是GORM连接数据库的方法。ORM是一种Object-Relationl Mapping，它的作用是在关系型数据库和对象之间作一个映射。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">持久化的设计则实现了数据处理层内部的 业务逻辑 和数据逻辑分离的解耦合,数据存取逻辑完全分离。 </span><br><span class="line">而 ORM 作为持久化设计中的最重要也最复杂的技术，也是目前业界热点技术。</span><br><span class="line"></span><br><span class="line">数据库的表（table） --&gt; 类（class）</span><br><span class="line">记录（record，行数据）--&gt; 对象（object）</span><br><span class="line">字段（field）--&gt; 对象的属性（attribute）</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>打开的连接 = 正在使用的连接(inuse) + 处于空闲状态的连接(idle)</p>
+</li>
+<li><p>开启了<strong>migration</strong> 模式，自动创表</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">migration</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="comment">// 自动迁移模式</span></span><br><span class="line">	DB.AutoMigrate(&amp;User&#123;&#125;)</span><br><span class="line">	DB.AutoMigrate(&amp;Article&#123;&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// User 用户模型</span></span><br><span class="line"><span class="keyword">type</span> User <span class="keyword">struct</span> &#123;</span><br><span class="line">	gorm.Model</span><br><span class="line">	UserName       <span class="keyword">string</span></span><br><span class="line">	PasswordDigest <span class="keyword">string</span></span><br><span class="line">	Nickname       <span class="keyword">string</span></span><br><span class="line">	Status         <span class="keyword">string</span></span><br><span class="line">	Avatar         <span class="keyword">string</span> <span class="string">`gorm:"size:1000"`</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中gorm.Model包含以下字段</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> Model <span class="keyword">struct</span> &#123;</span><br><span class="line">	ID        <span class="keyword">uint</span> <span class="string">`gorm:"primary_key"`</span></span><br><span class="line">	CreatedAt time.Time</span><br><span class="line">	UpdatedAt time.Time</span><br><span class="line">	DeletedAt *time.Time <span class="string">`sql:"index"`</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>连接redis Nosql数据库. 单例模式</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Redis 在中间件中初始化redis链接</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Redis</span><span class="params">()</span></span> &#123;</span><br><span class="line">	db, _ := strconv.ParseUint(os.Getenv(<span class="string">"REDIS_DB"</span>), <span class="number">10</span>, <span class="number">64</span>)</span><br><span class="line">	client := redis.NewClient(&amp;redis.Options&#123;</span><br><span class="line">		Addr:     os.Getenv(<span class="string">"REDIS_ADDR"</span>),</span><br><span class="line">		Password: os.Getenv(<span class="string">"REDIS_PW"</span>),</span><br><span class="line">		DB:       <span class="keyword">int</span>(db),</span><br><span class="line">	&#125;)</span><br><span class="line"></span><br><span class="line">	_, err := client.Ping().Result()</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		util.Log().Panic(<span class="string">"连接Redis不成功"</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	RedisClient = client</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="装载路由器"><a href="#装载路由器" class="headerlink" title="装载路由器"></a>装载路由器</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// NewRouter 路由配置</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewRouter</span><span class="params">()</span> *<span class="title">gin</span>.<span class="title">Engine</span></span> &#123;</span><br><span class="line">	r := gin.Default()</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 中间件, 顺序不能改</span></span><br><span class="line">	r.Use(middleware.Session(os.Getenv(<span class="string">"SESSION_SECRET"</span>)))</span><br><span class="line">	r.Use(middleware.Cors())</span><br><span class="line">	r.Use(middleware.CurrentUser())</span><br><span class="line">    </span><br><span class="line">    v1 := r.Group(<span class="string">"/api/v1"</span>)&#123;</span><br><span class="line">        v1.POST(<span class="string">"ping"</span>, api.Ping)</span><br><span class="line">        auth := v1.Group(<span class="string">""</span>)</span><br><span class="line">		auth.Use(middleware.AuthRequired())</span><br><span class="line">		&#123;</span><br><span class="line">            auth.DELETE(<span class="string">"user/logout"</span>, api.UserLogout)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> r</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>使用的就是gin的路由。</p>
+</li>
+<li><p>用了四个中间件。</p>
+<ul>
+<li><p><strong>Session</strong></p>
+<ul>
+<li>session必须依赖于cookie才能使用，生成一个sessionId放到cookie里面传递给client</li>
+<li><strong>用户验证</strong>这种场合一般会用 Session。因此，维持一个会话的核心就是客户端的唯一标识，即Session ID。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Session 初始化session</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Session</span><span class="params">(secret <span class="keyword">string</span>)</span> <span class="title">gin</span>.<span class="title">HandlerFunc</span></span> &#123;</span><br><span class="line">	store := cookie.NewStore([]<span class="keyword">byte</span>(secret))</span><br><span class="line">	<span class="comment">//Also set Secure: true if using SSL, you should though</span></span><br><span class="line">	store.Options(sessions.Options&#123;HttpOnly: <span class="literal">true</span>, MaxAge: <span class="number">7</span> * <span class="number">86400</span>, Path: <span class="string">"/"</span>&#125;)</span><br><span class="line">	<span class="keyword">return</span> sessions.Sessions(<span class="string">"gin-session"</span>, store)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>CurrentUser</strong> 用于获取session的user。用上下文c里包含的gin-session生成一个session数据结构，获取本数据结构的user_id。然后查看这个user_id是否能在数据库查到。如果可以，说明已经顺利登录。</p>
+<ul>
+<li><p>```GO<br>// CurrentUser 获取登录用户<br>func CurrentUser() gin.HandlerFunc {</p>
+<pre><code>return func(c *gin.Context) {
+    session := sessions.Default(c)
+    uid := session.Get(&quot;user_id&quot;)
+    if uid != nil {
+        user, err := model.GetUser(uid)
+        if err == nil {
+            c.Set(&quot;user&quot;, &amp;user)
+        }
+    }
+    c.Next()
+}
+</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- **AuthRequired** 是用来鉴权的</span><br><span class="line"></span><br><span class="line">  - 当我们登录的时候，除了验证账号密码以外，还会设置session。因此返回的response也会有gin-session。</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;GO</span><br><span class="line">  &#x2F;&#x2F; Login 用户登录函数</span><br><span class="line">  func (service *UserLoginService) Login(c *gin.Context) serializer.Response &#123;</span><br><span class="line">  	var user model.User</span><br><span class="line">  </span><br><span class="line">  	&#x2F;&#x2F;此处验证登录的账号密码</span><br><span class="line">  </span><br><span class="line">  	&#x2F;&#x2F; 设置session</span><br><span class="line">  	service.setSession(c, user)</span><br><span class="line">  </span><br><span class="line">  	return serializer.BuildUserResponse(user)</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// setSession 设置session</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(service *UserLoginService)</span> <span class="title">setSession</span><span class="params">(c *gin.Context, user model.User)</span></span> &#123;</span><br><span class="line">	s := sessions.Default(c)</span><br><span class="line">	s.Clear()</span><br><span class="line">	s.Set(<span class="string">"user_id"</span>, user.ID)</span><br><span class="line">	s.Save()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>![image-20200407233754153](E:\project\markdown-code\note\项目经历\main.assets\image-20200407233754153.png)
+
+
+
+
+
+- 等我们需要使用**AuthRequired** 中间件保护的接口的时候，浏览器会携带该cookies进行api访问。
+
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AuthRequired 需要登录</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">AuthRequired</span><span class="params">()</span> <span class="title">gin</span>.<span class="title">HandlerFunc</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">func</span><span class="params">(c *gin.Context)</span></span> &#123;</span><br><span class="line">		<span class="keyword">if</span> user, _ := c.Get(<span class="string">"user"</span>); user != <span class="literal">nil</span> &#123;</span><br><span class="line">			<span class="keyword">if</span> _, ok := user.(*model.User); ok &#123;</span><br><span class="line">				c.Next()</span><br><span class="line">				<span class="keyword">return</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		c.JSON(<span class="number">200</span>, serializer.CheckLogin())</span><br><span class="line">		c.Abort()</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+- 当我们logout的时候，也会清理掉这个session
+
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// UserLogout 用户登出</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">UserLogout</span><span class="params">(c *gin.Context)</span></span> &#123;</span><br><span class="line">	s := sessions.Default(c)</span><br><span class="line">	s.Clear()</span><br><span class="line">	s.Save()</span><br><span class="line">	c.JSON(<span class="number">200</span>, serializer.Response&#123;</span><br><span class="line">		Code: <span class="number">0</span>,</span><br><span class="line">		Msg:  <span class="string">"登出成功"</span>,</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre><ul>
+<li><p><strong>所以总结来说，如何进行鉴权？</strong></p>
+<ul>
+<li>后端对每个请求，都会通过它的cookies里面包含的session获取user_id</li>
+<li>通过user_id查询数据库是否存在该用户，如果查询成功，就将当前gin.Context的user设置为查询到的user。否则就为空。</li>
+<li>当访问需要登录的接口的时候，就会查询gin.Context里面的user是否存在，如果存在就可以访问；否则就不能访问。</li>
+<li>用户的登录会产生一个session信息在reponse的cookies，登出会消除掉这个session信息。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Cors</strong> 是解决跨域问题的</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">跨域是指一个域下的文档或脚本试图去请求另一个域下的资源，这里跨域是广义的。</span><br><span class="line">其实我们通常所说的跨域是狭义的，是由浏览器同源策略限制的一类请求场景。</span><br><span class="line">同源策略/SOP（Same origin policy）是一种约定，由Netscape公司<span class="number">1995</span>年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指<span class="string">"协议+域名+端口"</span>三者相同，即便两个不同的域名指向同一个ip地址，也非同源。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>再跑在3000端口就可以了。后端就运行起来了。</p>
+<hr>
+<p>下面我就分一下几种接口的类型，主要讲一下如何进行接口的开发。</p>
+<h2 id="开发接口的流程是怎么样的？"><a href="#开发接口的流程是怎么样的？" class="headerlink" title="开发接口的流程是怎么样的？"></a>开发接口的流程是怎么样的？</h2><ol>
+<li>在router中绑定url以及响应函数</li>
+</ol>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1.POST(<span class="string">"user/register"</span>, api.UserRegister)</span><br></pre></td></tr></table></figure>
+<ol>
+<li>在api文件夹新建user.go，创建响应函数</li>
+</ol>
+<p>每个响应函数都有不同的处理。有的需要传参，有的不需要。</p>
+<ul>
+<li>如果传参，就需要用到 gin里面的<strong>ShouldBind</strong> 进行参数解析。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ArticlePost 提交markdown格式的article</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">ArticlePost</span><span class="params">(c *gin.Context)</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	service := service.ArticlePostService&#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> err := c.ShouldBind(&amp;service); err == <span class="literal">nil</span> &#123;</span><br><span class="line">		res := service.Post()</span><br><span class="line">		c.JSON(<span class="number">200</span>, res)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		c.JSON(<span class="number">200</span>, ErrorResponse(err))</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果不传参，就不需要用（也别用，否则会报错）。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ShowArticle 取得单个article文件</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">ShowArticle</span><span class="params">(c *gin.Context)</span></span> &#123;</span><br><span class="line">	service := service.ShowArticleService&#123;&#125;</span><br><span class="line">	res := service.Show(c.Param(<span class="string">"id"</span>))</span><br><span class="line">	c.JSON(<span class="number">200</span>, res)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>可以看到在第二步的时候，有进行服务的初始化。所以为了完成第二步，事实上也需要code所需要的服务。</li>
+</ol>
+<p>以上传文章为例，我们在service文件夹创建article_post_service.go</p>
+<ul>
+<li>在<strong>ShouldBind</strong> 的时候，会对sevice进行数据绑定。为了正确绑定，我们要定义Service的结构</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ArticlePostService 管理文章上传的服务</span></span><br><span class="line"><span class="keyword">type</span> ArticlePostService <span class="keyword">struct</span> &#123;</span><br><span class="line">	Title   <span class="keyword">string</span> <span class="string">`form:"title" json:"title" binding:"required,min=2,max=30"`</span></span><br><span class="line">	Catalog <span class="keyword">string</span> <span class="string">`form:"catalog" json:"catalog"`</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>结构说明<ul>
+<li>Title必须大写，才可以被外面访问。</li>
+<li>tag内容有说明想要绑定的数据是以什么格式从前端传来后端的，binding对字段进行校验。<ul>
+<li>form:title。其中form表示表单，title表示传来的字段名字。</li>
+<li>binding后就是对输入属性的具体要求。required表示必选，也说明了最小值和最大值。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>然后需要定义<strong>针对结构体的方法函数</strong> 可能用于进一步验证，也可能用于真正的业务处理。下面两个函数，分别说明。</p>
+<ul>
+<li>表单验证</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// valid 验证表单</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(service *ArticlePostService)</span> <span class="title">valid</span><span class="params">()</span> *<span class="title">serializer</span>.<span class="title">Response</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	count := <span class="number">0</span></span><br><span class="line">	model.DB.Model(&amp;model.Article&#123;&#125;).Where(<span class="string">"title = ?"</span>, service.Title).Count(&amp;count)</span><br><span class="line">	<span class="keyword">if</span> count &gt; <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> &amp;serializer.Response&#123;</span><br><span class="line">			Code: <span class="number">40001</span>,</span><br><span class="line">			Msg:  <span class="string">"该文章已经上传"</span>,</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>特别注意！</strong></p>
+<p>这里的model.DB就是mysql的单例对象。这里的 <strong>Article结构体</strong> 和 上面定义的 <strong>ArticlePostService结构体</strong></p>
+<p>是两个不同的结构体。前者用于GORM，后者用于业务流程。上面在讲项目初始化的时候，有讲到过。</p>
+</li>
+</ul>
+<ul>
+<li><p>业务逻辑函数</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// Post 用于文章上传</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(service *ArticlePostService)</span> <span class="title">Post</span><span class="params">()</span> <span class="title">serializer</span>.<span class="title">Response</span></span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//校验</span></span><br><span class="line">	<span class="keyword">if</span> err := service.valid(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> *err</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">//对service里面的数据进行处理，已略代码</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">//由service -&gt; model</span></span><br><span class="line">	article := model.Article&#123;</span><br><span class="line">		Title:        service.Title,</span><br><span class="line">		Catalog:      service.Catalog,</span><br><span class="line">		Introduction: intro,</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 将文章写入数据库</span></span><br><span class="line">	<span class="keyword">if</span> err := model.DB.Create(&amp;article).Error; err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> serializer.ParamErr(<span class="string">"写入文章失败"</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回序列化好的输出</span></span><br><span class="line">	<span class="keyword">return</span> serializer.Response&#123;</span><br><span class="line">		Data: serializer.BuildArticleResponse(article, <span class="string">""</span>),</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li><p>可以留意到第四步里面的业务函数，返回的是一个<strong>serializer.Response{}</strong> 。这是为了让我们后端处理后的结果，等有序、pretty返回到前端。</p>
+<p>下面就介绍serializer模块。</p>
+</li>
+</ol>
+<ul>
+<li><p>为了返回统一的response.(json)，我们首先定义了一个<strong>通用的序列化器Response</strong></p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Response 基础序列化器</span></span><br><span class="line"><span class="keyword">type</span> Response <span class="keyword">struct</span> &#123;</span><br><span class="line">	Code  <span class="keyword">int</span>         <span class="string">`json:"code"`</span></span><br><span class="line">	Data  <span class="keyword">interface</span>&#123;&#125; <span class="string">`json:"data,omitempty"`</span></span><br><span class="line">	Msg   <span class="keyword">string</span>      <span class="string">`json:"msg"`</span></span><br><span class="line">	Error <span class="keyword">string</span>      <span class="string">`json:"error,omitempty"`</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Code通常是说明后端的状态处理码。这里的码和HTTP的状态码有不同的地方。我们通常都是直接返回HTTP的statuscode = 200，但是在response里面在说明一个自定义的码，来说明后端的处理情况。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 三位数错误编码为复用http原本含义</span></span><br><span class="line"><span class="comment">// 五位数错误编码为应用自定义错误</span></span><br><span class="line"><span class="comment">// 五开头的五位数错误编码为服务器端错误，比如数据库操作失败</span></span><br><span class="line"><span class="comment">// 四开头的五位数错误编码为客户端错误，有时候是客户端代码写错了，有时候是用户操作错误</span></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">	<span class="comment">// CodeCheckLogin 未登录</span></span><br><span class="line">	CodeCheckLogin = <span class="number">401</span></span><br><span class="line">	<span class="comment">// CodeNoRightErr 未授权访问</span></span><br><span class="line">	CodeNoRightErr = <span class="number">403</span></span><br><span class="line">	<span class="comment">// CodeDBError 数据库操作失败</span></span><br><span class="line">	CodeDBError = <span class="number">50001</span></span><br><span class="line">	<span class="comment">// CodeEncryptError 加密失败</span></span><br><span class="line">	CodeEncryptError = <span class="number">50002</span></span><br><span class="line">	<span class="comment">//CodeParamErr 各种奇奇怪怪的参数错误</span></span><br><span class="line">	CodeParamErr = <span class="number">40001</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//环境错误</span></span><br><span class="line">	CodeEnv = <span class="number">101</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>通常Error信息由gin/go自带的err来添加。</li>
+<li>我们要真正返回信息，就放在<strong>Data</strong>这一块。譬如我们有很多文章model，但是我们需要序列化成一个输出的struct。这个struct会在返回时自动转为json。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Article 文章序列化器</span></span><br><span class="line"><span class="keyword">type</span> Article <span class="keyword">struct</span> &#123;</span><br><span class="line">	ID           <span class="keyword">uint</span>   <span class="string">`json:"id"`</span></span><br><span class="line">	Title        <span class="keyword">string</span> <span class="string">`json:"title"`</span></span><br><span class="line">	Introduction <span class="keyword">string</span> <span class="string">`json:"introduction"`</span></span><br><span class="line">	Content      <span class="keyword">string</span> <span class="string">`json:"content"`</span></span><br><span class="line">	Catalog      <span class="keyword">string</span> <span class="string">`json:"catalog"`</span></span><br><span class="line">	View         <span class="keyword">uint64</span> <span class="string">`json:"view"`</span></span><br><span class="line">	Like         <span class="keyword">uint64</span> <span class="string">`json:"like"`</span></span><br><span class="line">	CreatedAt    <span class="keyword">string</span> <span class="string">`json:"created_at"`</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>也要定义序列化函数，将数据从 model转为序列化的struct。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// BuildArticle 序列化文章</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">BuildArticle</span><span class="params">(article model.Article, content <span class="keyword">string</span>)</span> <span class="title">Article</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> Article&#123;</span><br><span class="line">		ID:           article.ID,</span><br><span class="line">		Title:        article.Title,</span><br><span class="line">		Introduction: article.Introduction,</span><br><span class="line">		Content:      content,</span><br><span class="line">		Catalog:      article.Catalog,</span><br><span class="line">		View:         article.ViewNumber(),</span><br><span class="line">		Like:         article.LikeNumber(),</span><br><span class="line">		CreatedAt:    article.CreatedAt.Format(<span class="string">"2006-01-02 15:04"</span>),</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果只序列化一个文章，只要用上面的这个函数就好。但是如果要序列化多篇文章，就得再写一个能处理多条信息的序列化器。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// BuildArticleResponse 序列化单篇文章响应</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">BuildArticleResponse</span><span class="params">(article model.Article, content <span class="keyword">string</span>)</span> <span class="title">Article</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> BuildArticle(article, content)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// BuildArticlesResponse 序列化多篇文章响应</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">BuildArticlesResponse</span><span class="params">(items []model.Article)</span> <span class="params">(articles []Article)</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> _, item := <span class="keyword">range</span> items &#123;</span><br><span class="line">		articles = <span class="built_in">append</span>(articles, BuildArticle(item, <span class="string">""</span>))</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> articles</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时，data里面要再嵌套一个<strong>基础列表结构</strong> ,同时构造好它的通用函数</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//DataList 基础列表结构</span></span><br><span class="line"><span class="keyword">type</span> DataList <span class="keyword">struct</span> &#123;</span><br><span class="line">	Items <span class="keyword">interface</span>&#123;&#125; <span class="string">`json:"items"`</span></span><br><span class="line">	Total <span class="keyword">uint</span>        <span class="string">`json:"total"`</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//BuildListResponse 列表构建器</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">BuildListResponse</span><span class="params">(items <span class="keyword">interface</span>&#123;&#125;, total <span class="keyword">uint</span>)</span> <span class="title">Response</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> Response&#123;</span><br><span class="line">		Data: DataList&#123;</span><br><span class="line">			Items: items,</span><br><span class="line">			Total: total,</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>序列化好后，直接返回。gin会将数据从struct转为json。</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"items"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="number">1</span>,</span><br><span class="line">                <span class="attr">"title"</span>: <span class="string">"自序"</span>,</span><br><span class="line">                <span class="attr">"introduction"</span>: <span class="string">"为什么要搭博客有很多原因，..."</span>,</span><br><span class="line">                <span class="attr">"content"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"catalog"</span>: <span class="string">"建站日记"</span>,</span><br><span class="line">                <span class="attr">"view"</span>: <span class="number">201</span>,</span><br><span class="line">                <span class="attr">"like"</span>: <span class="number">9</span>,</span><br><span class="line">                <span class="attr">"created_at"</span>: <span class="string">"2020-02-16 15:15"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="number">2</span>,</span><br><span class="line">                <span class="attr">"title"</span>: <span class="string">"test1"</span>,</span><br><span class="line">                <span class="attr">"introduction"</span>: <span class="string">"我是简介啊啊啊..."</span>,</span><br><span class="line">                <span class="attr">"content"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"catalog"</span>: <span class="string">"建站日记"</span>,</span><br><span class="line">                <span class="attr">"view"</span>: <span class="number">26</span>,</span><br><span class="line">                <span class="attr">"like"</span>: <span class="number">1</span>,</span><br><span class="line">                <span class="attr">"created_at"</span>: <span class="string">"2020-02-16 15:41"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="number">3</span>,</span><br><span class="line">                <span class="attr">"title"</span>: <span class="string">"test2"</span>,</span><br><span class="line">                <span class="attr">"introduction"</span>: <span class="string">"我是简介啊啊啊我是简介啊啊啊..."</span>,</span><br><span class="line">                <span class="attr">"content"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"catalog"</span>: <span class="string">"建站日记"</span>,</span><br><span class="line">                <span class="attr">"view"</span>: <span class="number">6</span>,</span><br><span class="line">                <span class="attr">"like"</span>: <span class="number">1</span>,</span><br><span class="line">                <span class="attr">"created_at"</span>: <span class="string">"2020-02-16 15:41"</span></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">"total"</span>: <span class="number">3</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面讲完了一个接口的开发流程。</p>
+<p>下面针对某些特定技术讲解。</p>
+<h2 id="如何使用redis"><a href="#如何使用redis" class="headerlink" title="如何使用redis?"></a>如何使用redis?</h2><h3 id="理论学习"><a href="#理论学习" class="headerlink" title="理论学习"></a>理论学习</h3><p>Redis 可基于内存亦可持久化的日志型、Key-Value 数据库，并提供多种语言的 API的非关系型数据库。访问很快。</p>
+<p><strong>什么是Redis持久化？ </strong></p>
+<p>持久化就是把内存的数据写到磁盘中去，防止服务宕机了内存数据丢失。</p>
+<p>其他就都不展开了。</p>
+<h3 id="redis如何实现点赞数量的功能？"><a href="#redis如何实现点赞数量的功能？" class="headerlink" title="redis如何实现点赞数量的功能？"></a>redis如何实现点赞数量的功能？</h3><p>和上面开发接口一样，也要定义api，定义service。只在service里面的业务函数中，直接调用了model里面定义好的点赞函数。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//文章点赞数加一</span></span><br><span class="line">article.AddLike()</span><br></pre></td></tr></table></figure>
+<p>让我们来看看这个函数。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AddLike 文章喜欢+1</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(article *Article)</span> <span class="title">AddLike</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//增加文章喜欢点击数</span></span><br><span class="line">	cache.RedisClient.Incr(cache.ArticleLikeKey(article.ID))</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中生成key的函数</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ArticleLikeKey 生成Article喜欢的Key</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">ArticleLikeKey</span><span class="params">(id <span class="keyword">uint</span>)</span> <span class="title">string</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> fmt.Sprintf(<span class="string">"like:article:%s"</span>, strconv.Itoa(<span class="keyword">int</span>(id)))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那怎样才可以返回累计的数目呢？简单的查询。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//LikeNumber 文章喜欢的累计数</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(article *Article)</span> <span class="title">LikeNumber</span><span class="params">()</span> <span class="title">uint64</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	countStr, _ := cache.RedisClient.Get(cache.ArticleLikeKey(article.ID)).Result()</span><br><span class="line">	count, _ := strconv.ParseUint(countStr, <span class="number">10</span>, <span class="number">64</span>)</span><br><span class="line">	<span class="keyword">return</span> count</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="redis如何实现每日点击排行榜？"><a href="#redis如何实现每日点击排行榜？" class="headerlink" title="redis如何实现每日点击排行榜？"></a>redis如何实现每日点击排行榜？</h3><p>在我们增加点击量的时候，也增加有序集合里面的点击率。后者设置任务让它每天清零。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Addview 文章游览+1</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(article *Article)</span> <span class="title">Addview</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//增加视频点击数</span></span><br><span class="line">	cache.RedisClient.Incr(cache.ArticleViewKey(article.ID))</span><br><span class="line"></span><br><span class="line">	<span class="comment">//增加排行榜里面的视频点击数</span></span><br><span class="line">	cache.RedisClient.ZIncrBy(cache.TotalRankKey, <span class="number">1</span>, strconv.Itoa(<span class="keyword">int</span>(article.ID)))</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="如何实现查询分页功能？"><a href="#如何实现查询分页功能？" class="headerlink" title="如何实现查询分页功能？"></a>如何实现查询分页功能？</h2><p>定义好start和limit，start表示开始的index，limit表示数目。</p>
+<p>下面就贴一下两种实现：ORM和mysql。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> err := model.DB.Limit(service.Limit).Offset(service.Start).Find(&amp;articles).Error; err != <span class="literal">nil</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> serializer.Response&#123;</span><br><span class="line">		Code:  <span class="number">50000</span>,</span><br><span class="line">		Msg:   <span class="string">"数据库查询错误"</span>,</span><br><span class="line">		Error: err.Error(),</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from student limit(curPage-1)*pageSize,pageSize;</span><br></pre></td></tr></table></figure>
+<p>ok 后面还有一个hitMaker，主要是对库的运用和算法的设计。感觉不值得讲。所以就不讲了。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GO/" rel="tag"># GO</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/Leetcode-TOP100-Easy-%E6%80%9D%E8%B7%AF%E5%92%8C%E4%BB%A3%E7%A0%81.html/" rel="next" title="Leetcode-TOP100-Easy:思路和代码">
+                <i class="fa fa-chevron-left"></i> Leetcode-TOP100-Easy:思路和代码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="JaxChan" />
+            
+              <p class="site-author-name" itemprop="name">JaxChan</p>
+              <p class="site-description motion-element" itemprop="description">你来了 我也不知道说些什么</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/jaxchan25" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://upload-images.jianshu.io/upload_images/15914329-cb64457e2b808dff.jpg" target="_blank" title="Wechat">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Wechat</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Borderland-个人博客"><span class="nav-number">2.</span> <span class="nav-text">Borderland 个人博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目名称"><span class="nav-number">2.1.</span> <span class="nav-text">项目名称</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后端是如何运行起来的？"><span class="nav-number">2.2.</span> <span class="nav-text">后端是如何运行起来的？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目初始化"><span class="nav-number">2.2.1.</span> <span class="nav-text">项目初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装载路由器"><span class="nav-number">2.2.2.</span> <span class="nav-text">装载路由器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发接口的流程是怎么样的？"><span class="nav-number">2.3.</span> <span class="nav-text">开发接口的流程是怎么样的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用redis"><span class="nav-number">2.4.</span> <span class="nav-text">如何使用redis?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理论学习"><span class="nav-number">2.4.1.</span> <span class="nav-text">理论学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis如何实现点赞数量的功能？"><span class="nav-number">2.4.2.</span> <span class="nav-text">redis如何实现点赞数量的功能？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis如何实现每日点击排行榜？"><span class="nav-number">2.4.3.</span> <span class="nav-text">redis如何实现每日点击排行榜？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现查询分页功能？"><span class="nav-number">2.5.</span> <span class="nav-text">如何实现查询分页功能？</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JaxChan</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
